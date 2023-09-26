@@ -15,11 +15,13 @@ class DoctorFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
+            'name' => fake()->unique()->name(),
             'email' => fake()->unique()->safeEmail(),
-            'specialty' => fake()->jobTitle(),
+            'phone' => fake()->unique()->e164PhoneNumber(),
+            'address' => fake()->unique()->address(),
+            'specialty' => fake()->unique()->jobTitle(),
             'description' => fake()->realText($maxNbChars = 200, $indexSize = 2),
-            'image' => 'images/' . rand(1, 2) . '.jpg',
+            'image' => 'images/' . rand(1, 4) . '.png',
         ];
     }
 }
