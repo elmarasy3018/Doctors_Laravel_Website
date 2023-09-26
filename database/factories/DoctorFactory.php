@@ -17,8 +17,9 @@ class DoctorFactory extends Factory
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
-            'specialty' => Str::random(10),
-            'description' => Str::random(10),
+            'specialty' => fake()->jobTitle(),
+            'description' => fake()->realText($maxNbChars = 200, $indexSize = 2),
+            'image' => 'images/' . rand(1, 2) . '.jpg',
         ];
     }
 }
