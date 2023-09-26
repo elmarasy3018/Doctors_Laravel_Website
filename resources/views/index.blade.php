@@ -9,7 +9,13 @@
 </head>
 
 <body>
-
+    <div>
+        @foreach ($doctors as $doctor)
+        <div>
+            {{ $doctor }}
+        </div>
+        @endforeach
+    </div>
 </body>
-{{ $doctors }}
+
 </html>
