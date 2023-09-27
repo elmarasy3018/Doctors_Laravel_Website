@@ -119,22 +119,22 @@
                 <div>
                     <div class="flex">
                         <img src="{{ asset('images/headache-types.jpg') }}"class="h-48 w-74">
-                        <p class="pl-5 pt-5"><span class="text-white font-medium text-base">January 18, 2023</span><br><br>
-                            <span class="text-white font-bold text-2xl">Understanding Different Types of Headaches:
+                        <p class="pl-5 pt-5"><span class="text-white font-medium 2xl:text-base text-sm">January 18, 2023</span><br><br>
+                            <span class="text-white font-bold 2xl:text-2xl text-lg">Understanding Different Types of Headaches:
                                 AMedical Overview</span>
                         </p>
                     </div>
                     <div class="flex">
                         <img src="{{ asset('images/brain-tumor.jpg') }}" class="h-48 w-74">
-                        <p class="pl-5 pt-5"><span class="text-white font-medium text-base">January 18, 2023</span><br><br>
-                            <span class="text-white font-bold text-2xl">Navigating the Landscape of Brain Tumor Types: A
+                        <p class="pl-5 pt-5"><span class="text-white font-medium 2xl:text-base text-sm">January 18, 2023</span><br><br>
+                            <span class="text-white font-bold 2xl:text-2xl text-lg">Navigating the Landscape of Brain Tumor Types: A
                                 Comprehensive Medical Guide</span>
                         </p>
                     </div>
                     <div class="flex">
                         <img src="{{ asset('images/headache-types.jpg') }}" class="h-48 w-74">
-                        <p class="pl-5 pt-5"><span class="text-white font-medium text-base">January 18, 2023</span><br><br>
-                            <span class="text-white font-bold text-2xl">Navigating the Spectrum of Spine Problems: A
+                        <p class="pl-5 pt-5"><span class="text-white font-medium 2xl:text-base text-sm">January 18, 2023</span><br><br>
+                            <span class="text-white font-bold 2xl:text-2xl text-lg">Navigating the Spectrum of Spine Problems: A
                                 Comprehensive Medical Overview</span>
                         </p>
                     </div>
