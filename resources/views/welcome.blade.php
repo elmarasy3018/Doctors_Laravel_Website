@@ -46,26 +46,28 @@
     <main>
         <div class="videos">
             <div class="m-5">
-                <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                <div id="default-carousel" class="relative w-full" data-carousel="slide">
                     <!-- Carousel wrapper -->
-                    <div class="relative h-56 overflow-hidden md:h-96">
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                         @foreach ($doctors as $doctor)
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                                <div class="grid grid-cols-2 w-full h-56 md:h-96 mx-5">
-                                    <div class="flex justify-center items-center">
-                                        <img src="{{ asset($doctor->image) }}" alt="doctor" class="h-56 md:h-96 rounded-lg">
-                                    </div>
-                                    <div class="pt-10 text-white mr-24">
-                                        <h1 class="font-bold 2xl:text-6xl text-4xl mb-2">Dr. {{ $doctor->name }}</h1>
-                                        <h1 class="font-semibold 2xl:text-4xl text-2xl 2xl:mb-8 mb-4">{{
-                                            $doctor->specialty }}</h1>
-                                        <h1 class="font-semibold 2xl:text-xl text-base 2xl:mb-8 mb-4">{{
-                                            $doctor->description }}</h1>
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                                <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                                    <div class="grid grid-cols-10 w-full h-56 md:h-96">
+                                        <div class="flex justify-center items-center col-span-4">
+                                            <img src="{{ asset($doctor->image) }}" alt="doctor"
+                                                class="h-56 md:h-96 rounded-lg">
+                                        </div>
+                                        <div class="pt-10 pr-24 text-white col-span-6">
+                                            <h1 class="font-bold 2xl:text-6xl text-4xl mb-2">Dr. {{ $doctor->name }}
+                                            </h1>
+                                            <h1 class="font-semibold 2xl:text-4xl text-2xl 2xl:mb-8 mb-4">
+                                                {{ $doctor->specialty }}</h1>
+                                            <h1 class="font-semibold 2xl:text-xl text-base 2xl:mb-8 mb-4">
+                                                {{ $doctor->description }}</h1>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         @endforeach
                     </div>
                     <!-- Slider controls -->
@@ -179,12 +181,14 @@
                 </div>
                 <div class="flex flex-col">
                     <div class="font-bold text-2xl">More Info</div>
-                    <a href=""><span class="font-medium text-lg hover:text-blue-900 hover:underline">News</span></a>
+                    <a href=""><span
+                            class="font-medium text-lg hover:text-blue-900 hover:underline">News</span></a>
                     <a href=""><span class="font-medium text-lg hover:text-blue-900 hover:underline">About Dr.
                             Samer</span></a>
                     <a href=""><span class="font-medium text-lg hover:text-blue-900 hover:underline">National &
                             International Events</span></a>
-                    <a href=""><span class="font-medium text-lg hover:text-blue-900 hover:underline">Publications
+                    <a href=""><span
+                            class="font-medium text-lg hover:text-blue-900 hover:underline">Publications
                             & Scientific Activities</span></a>
                 </div>
             </div>
