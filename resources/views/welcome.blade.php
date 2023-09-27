@@ -22,8 +22,7 @@
     </style>
 </head>
 
-<body class="bg-gray-600">
-
+<body class="bg-neutral-800">
     <header>
         <nav class="bg-white border-gray-200">
             <div class="flex justify-around items-center p-3">
@@ -44,7 +43,7 @@
         </nav>
     </header>
     <main>
-        <div class="videos">
+        <div class="carousel">
             <div class="m-5">
                 <div id="default-carousel" class="relative w-full" data-carousel="slide">
                     <!-- Carousel wrapper -->
@@ -57,7 +56,7 @@
                                             <img src="{{ asset($doctor->image) }}" alt="doctor"
                                                 class="h-56 md:h-96 rounded-lg">
                                         </div>
-                                        <div class="pt-10 pr-24 text-white col-span-6">
+                                        <div class="pt-10 pr-20 text-white col-span-6">
                                             <h1 class="font-bold 2xl:text-6xl text-4xl mb-2">Dr. {{ $doctor->name }}
                                             </h1>
                                             <h1 class="font-semibold 2xl:text-4xl text-2xl 2xl:mb-8 mb-4">
@@ -101,46 +100,33 @@
             </div>
         </div>
         <div class="news">
-            <div class="bg-neutral-900 text-neutral-50">
-                <div id="app"
-                    class="max-w-screen-lg mx-auto px-4 md:px-8 py-12 transition-all duration-500 ease-linear">
-                    <h1 class="font-cabinetGrotesk text-3xl lg:text-4xl font-bold mb-10 leading-tight text-center">
-                        Latest
-                        News</h1>
-                    <div class="relative">
-                        <div
-                            class="slides-container h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
-                            <div class="slide aspect-square h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                                <div class="w-full h-full object-cover grid grid-row-2">
-                                    <img src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1600"
-                                        alt="mountain_image">
-                                    <img src="https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1600"
-                                        alt="mountain_image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute top-0 -left-4 h-full items-center hidden md:flex">
-                            <button role="button"
-                                class="prev px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
-                                aria-label="prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.75 19.5L8.25 12l7.5-7.5" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="absolute top-0 -right-4 h-full items-center hidden md:flex">
-                            <button role="button"
-                                class="next px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
-                                aria-label="next"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                                </svg>
-                            </button>
-                        </div>
+            <div class="grid grid-cols-2 gap-10 p-10 px-20">
+                <div>
+                    <img src="{{ asset('images/brain-tumor.jpg') }}">
+                    <span class="text-white font-medium text-base">January 18, 2023</span><br>
+                    <span class="text-white font-bold text-3xl">Navigating the Spectrum of Spine Problems: A Comprehensive Medical Overview</span><br>
+                    <span class="text-white font-simibold text-lg">The spine, a remarkable structure supporting our body and facilitating movement, is
+                        susceptible to a
+                        variety of complex medical issues. From degenerative conditions to traumatic injuries,
+                        spine
+                        problems can significantly impact one's quality of life. In this blog post, we'll delve
+                        into the
+                        diverse world of spine problems, shedding light on different types, their underlying
+                        causes,
+                        symptoms, and available medical interventions.</span>
+                </div>
+                <div>
+                    <div><img src="{{ asset('images/headache-types.jpg') }}" class="h-48 w-74"></div>
+                    <div><span>January 18, 2023</span>
+                        <span>Understanding Different Types of Headaches: A Medical Overview</span>
+                    </div>
+                    <div><img src="{{ asset('images/brain-tumor.jpg') }}" class="h-48 w-74"></div>
+                    <div><span>January 18, 2023</span>
+                        <span>Navigating the Landscape of Brain Tumor Types: A Comprehensive Medical Guide</span>
+                    </div>
+                    <div><img src="{{ asset('images/headache-types.jpg') }}" class="h-48 w-74"></div>
+                    <div><span>January 18, 2023</span>
+                        <span>Navigating the Spectrum of Spine Problems: A Comprehensive Medical Overview</span>
                     </div>
                 </div>
             </div>
