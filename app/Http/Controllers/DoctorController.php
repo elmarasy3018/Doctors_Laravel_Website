@@ -20,4 +20,11 @@ class DoctorController extends Controller
         // return $doctor;
         return view('show', ['doctor' => $doctor]);
     }
+    
+    public function carousel()
+    {
+        $doctors = Doctor::all();
+        // return $doctors;
+        return view('welcome', ['doctors' => $doctors]);
+    }
 }

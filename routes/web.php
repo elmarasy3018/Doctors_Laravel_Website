@@ -14,9 +14,7 @@ use App\Http\Controllers\DoctorController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [DoctorController::class, 'carousel']);
 
 Route::resource('doctors', DoctorController::class)->only([
     'index',
