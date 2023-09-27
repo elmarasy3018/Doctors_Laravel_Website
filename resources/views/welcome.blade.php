@@ -102,31 +102,41 @@
         <div class="news">
             <div class="grid grid-cols-2 gap-10 p-10 px-20">
                 <div>
-                    <img src="{{ asset('images/brain-tumor.jpg') }}">
+                    <img src="{{ asset('images/brain-tumor.jpg') }}"><br>
                     <span class="text-white font-medium text-base">January 18, 2023</span><br>
-                    <span class="text-white font-bold text-3xl">Navigating the Spectrum of Spine Problems: A Comprehensive Medical Overview</span><br>
-                    <span class="text-white font-simibold text-lg">The spine, a remarkable structure supporting our body and facilitating movement, is
+                    <span class="text-white font-bold text-3xl">Navigating the Spectrum of Spine Problems: A
+                        Comprehensive Medical Overview</span><br>
+                    <span class="text-white font-semibold text-lg">The spine, a remarkable structure supporting our body
+                        and facilitating movement, is
                         susceptible to a
                         variety of complex medical issues. From degenerative conditions to traumatic injuries,
                         spine
                         problems can significantly impact one's quality of life. In this blog post, we'll delve
                         into the
                         diverse world of spine problems, shedding light on different types, their underlying
-                        causes,
-                        symptoms, and available medical interventions.</span>
+                        causes.</span>
                 </div>
                 <div>
-                    <div><img src="{{ asset('images/headache-types.jpg') }}" class="h-48 w-74"></div>
-                    <div><span>January 18, 2023</span>
-                        <span>Understanding Different Types of Headaches: A Medical Overview</span>
+                    <div class="flex">
+                        <img src="{{ asset('images/headache-types.jpg') }}"class="h-48 w-74">
+                        <p class="pl-5 pt-5"><span class="text-white font-medium text-base">January 18, 2023</span><br><br>
+                            <span class="text-white font-bold text-2xl">Understanding Different Types of Headaches:
+                                AMedical Overview</span>
+                        </p>
                     </div>
-                    <div><img src="{{ asset('images/brain-tumor.jpg') }}" class="h-48 w-74"></div>
-                    <div><span>January 18, 2023</span>
-                        <span>Navigating the Landscape of Brain Tumor Types: A Comprehensive Medical Guide</span>
+                    <div class="flex">
+                        <img src="{{ asset('images/brain-tumor.jpg') }}" class="h-48 w-74">
+                        <p class="pl-5 pt-5"><span class="text-white font-medium text-base">January 18, 2023</span><br><br>
+                            <span class="text-white font-bold text-2xl">Navigating the Landscape of Brain Tumor Types: A
+                                Comprehensive Medical Guide</span>
+                        </p>
                     </div>
-                    <div><img src="{{ asset('images/headache-types.jpg') }}" class="h-48 w-74"></div>
-                    <div><span>January 18, 2023</span>
-                        <span>Navigating the Spectrum of Spine Problems: A Comprehensive Medical Overview</span>
+                    <div class="flex">
+                        <img src="{{ asset('images/headache-types.jpg') }}" class="h-48 w-74">
+                        <p class="pl-5 pt-5"><span class="text-white font-medium text-base">January 18, 2023</span><br><br>
+                            <span class="text-white font-bold text-2xl">Navigating the Spectrum of Spine Problems: A
+                                Comprehensive Medical Overview</span>
+                        </p>
                     </div>
                 </div>
             </div>
