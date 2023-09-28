@@ -63,26 +63,30 @@
     const logo2 = document.querySelector('.logo-2');
     const ul = document.querySelector('.ul');
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= 48) {
+        if (window.scrollY >= 44) {
             navbar.classList.add('bg-white');
             navbar.classList.add('shadow-2xl');
+            navbar.classList.remove('top-10');
             navbar.classList.remove('top-5');
             navbar.classList.add('top-0');
-            navbar.classList.remove('py-5');
             logo1.classList.add('hidden');
             logo2.classList.remove('hidden');
             ul.classList.add('text-blue-800');
             ul.classList.remove('text-white');
-        } else {
+        } else if (window.scrollY < 22) {
             navbar.classList.remove('bg-white');
             navbar.classList.remove('shadow-2xl');
             navbar.classList.remove('top-0');
-            navbar.classList.add('top-5');
-            navbar.classList.add('py-5');
+            navbar.classList.remove('top-5');
+            navbar.classList.add('top-10');
             logo1.classList.remove('hidden');
             logo2.classList.add('hidden');
             ul.classList.add('text-white');
             ul.classList.remove('text-blue-800');
+        } else if (window.scrollY >= 22 && window.scrollY < 44) {
+            navbar.classList.remove('top-0');
+            navbar.classList.remove('top-10');
+            navbar.classList.add('top-5');
         }
     })
 </script>
