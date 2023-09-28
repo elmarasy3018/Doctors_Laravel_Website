@@ -23,6 +23,10 @@
         .navbar {
             transition: 100ms;
         }
+
+        .checked {
+            color: orange;
+        }
     </style>
 </head>
 
@@ -55,7 +59,8 @@
                 </a>
                 <div class="flex md:order-2">
                     <button type="button"
-                        class="text-white px-4 py-2 bg-sky-500 hover:bg-sky-600 rounded-full font-semibold text-xl inline-block align-middle">Contact Us</button>
+                        class="text-white px-4 py-2 bg-sky-500 hover:bg-sky-600 rounded-full font-semibold text-xl inline-block align-middle">Contact
+                        Us</button>
                     <button data-collapse-toggle="navbar-sticky" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         aria-controls="navbar-sticky" aria-expanded="false">
