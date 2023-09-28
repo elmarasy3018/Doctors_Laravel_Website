@@ -1,5 +1,5 @@
 @include('header')
-<div class="grid grid-cols-3 gap-10 m-10">
+<div class="grid grid-cols-3 gap-10 m-10 mt-28">
     @foreach ($doctors as $doctor)
         <a href="{{ route('doctors.show', ['doctor' => $doctor->id]) }}">
             <div class="relative hover:-translate-y-5 hover:scale-105 ease-in-out duration-300">

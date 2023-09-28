@@ -1,6 +1,37 @@
 @include('header')
+<div class="hero">
+    <div class="head bg-[url('https://www.samer.treeegypt.com/assets/img/hero-bg.jpg')]">
+        <div class="grid grid-cols-2 grid-rows-1 pt-40 pb-36">
+            <div></div>
+            <div>
+                <span class="text-white text-6xl font-semibold">Dr. Samer Samy</span><br><br>
+                <span class="text-sky-100 text-2xl font-medium">Neurosurgery Fellow, Consultant, and Chief at the
+                    Neurosurgery Department of Alexandria University Student Hospital in Egypt. Consultant Spine Surgeon
+                    at Smouha University Hospital and a Consultant Neurosurgeon at Alexandria Medical Center.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="grid grid-cols-2 grid-rows-1">
+            <div class="bg-[url('https://www.samer.treeegypt.com/assets/img/about-us.jpg')]"></div>
+            <div class="px-14 py-20 bg-white text-neutral-800">
+                <span class="text-4xl font-semibold">Know more about Dr. Samer Samy</span><br>
+                <span class="text-3xl font-semibold">And when he gets his degrees?</span><br><br>
+                <span class="text-xl font-medium">
+                    M.B, B.Ch. of Medicine and Surgery at the Faculty of Medicine, Alexandria University in Egypt
+                    between 1993-1999. Earned a Master's Degree in Surgery between 2001-2004 and a Doctorate Degree in
+                    Neurosurgery between 2004-2010, both from the Neurosurgery Department at the Faculty of Medicine,
+                    Alexandria University in Egypt.
+                </span><br><br>
+                <span class="text-2xl font-semibold">Alex Neuro Spine - Dr. Samer Samy</span>
+            </div>
+        </div>
+    </div>
+    <div class="leg"></div>
+</div>
 <div class="carousel">
-    <div class="m-5">
+    <div class="m-10">
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                 @foreach ($doctors as $doctor)
@@ -55,14 +86,14 @@
     </div>
 </div>
 <div class="news">
-    <div class="grid grid-cols-2 gap-10 p-10 px-16 2xl:px-36">
+    <div class="grid grid-cols-2 gap-10 p-10 px-16 2xl:px-36 bg-white text-neutral-800">
         <div>
             <img src="{{ asset('images/brain-tumor.jpg') }}" class="rounded-lg 2xl:h-auto 2xl:w-10/12">
             <p class="pt-3">
-                <span class="text-white font-medium text-base">January 18, 2023</span><br>
-                <span class="text-white font-bold text-3xl">Navigating the Spectrum of Spine Problems: A
+                <span class="font-medium text-base">January 18, 2023</span><br>
+                <span class="font-bold text-3xl">Navigating the Spectrum of Spine Problems: A
                     Comprehensive Medical Overview</span><br>
-                <span class="text-white font-semibold text-lg">The spine, a remarkable structure supporting our
+                <span class="font-semibold text-lg">The spine, a remarkable structure supporting our
                     body and facilitating movement, is susceptible to a
                     variety of complex medical issues. From degenerative conditions to traumatic injuries, spine
                     problems can significantly impact one's quality of life. In this blog post.</span>
@@ -71,27 +102,27 @@
         <div class="flex flex-col justify-between">
             <div class="flex">
                 <img src="{{ asset('images/headache-types.jpg') }}"class="h-48 w-74 rounded-lg">
-                <p class="pl-5"><span class="text-white font-medium 2xl:text-base text-sm">January 18,
+                <p class="pl-5"><span class="font-medium 2xl:text-base text-sm">January 18,
                         2023</span><br>
-                    <span class="text-white font-bold 2xl:text-2xl text-lg">Understanding Different Types of
+                    <span class="font-bold 2xl:text-2xl text-lg">Understanding Different Types of
                         Headaches:
                         AMedical Overview</span>
                 </p>
             </div>
             <div class="flex">
                 <img src="{{ asset('images/brain-tumor.jpg') }}" class="h-48 w-74 rounded-lg">
-                <p class="pl-5"><span class="text-white font-medium 2xl:text-base text-sm">January 18,
+                <p class="pl-5"><span class="font-medium 2xl:text-base text-sm">January 18,
                         2023</span><br>
-                    <span class="text-white font-bold 2xl:text-2xl text-lg">Navigating the Landscape of Brain
+                    <span class="font-bold 2xl:text-2xl text-lg">Navigating the Landscape of Brain
                         Tumor Types: A
                         Comprehensive Medical Guide</span>
                 </p>
             </div>
             <div class="flex">
                 <img src="{{ asset('images/headache-types.jpg') }}" class="h-48 w-74 rounded-lg">
-                <p class="pl-5"><span class="text-white font-medium 2xl:text-base text-sm">January 18,
+                <p class="pl-5"><span class="font-medium 2xl:text-base text-sm">January 18,
                         2023</span><br>
-                    <span class="text-white font-bold 2xl:text-2xl text-lg">Navigating the Spectrum of Spine
+                    <span class="font-bold 2xl:text-2xl text-lg">Navigating the Spectrum of Spine
                         Problems: A
                         Comprehensive Medical Overview</span>
                 </p>
@@ -99,20 +130,22 @@
         </div>
     </div>
 </div>
-<div class="flex justify-around bg-neutral-800">
-    <div class="p-5 border border-white m-5">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6824.163098336363!2d29.932468000000004!3d31.218469999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4895be55f8d%3A0xa69ba7a8c6faf5ca!2zRHIuIFNhbWVyIFNhbXkg2K8u2LPYp9mF2LEg2LPYp9mF2Yo!5e0!3m2!1sen!2seg!4v1695802183324!5m2!1sen!2seg"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-    <div class="p-5 border border-white m-5">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6824.163098336363!2d29.932468000000004!3d31.218469999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4895be55f8d%3A0xa69ba7a8c6faf5ca!2zRHIuIFNhbWVyIFNhbXkg2K8u2LPYp9mF2LEg2LPYp9mF2Yo!5e0!3m2!1sen!2seg!4v1695802183324!5m2!1sen!2seg"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+<div class="maps">
+    <div class="flex justify-around bg-neutral-800 p-5">
+        <div class="p-5 border border-white m-5">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6824.163098336363!2d29.932468000000004!3d31.218469999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4895be55f8d%3A0xa69ba7a8c6faf5ca!2zRHIuIFNhbWVyIFNhbXkg2K8u2LPYp9mF2LEg2LPYp9mF2Yo!5e0!3m2!1sen!2seg!4v1695802183324!5m2!1sen!2seg"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="p-5 border border-white m-5">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6824.163098336363!2d29.932468000000004!3d31.218469999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4895be55f8d%3A0xa69ba7a8c6faf5ca!2zRHIuIFNhbWVyIFNhbXkg2K8u2LPYp9mF2LEg2LPYp9mF2Yo!5e0!3m2!1sen!2seg!4v1695802183324!5m2!1sen!2seg"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </div>
 </div>
 @include('footer')

@@ -21,7 +21,7 @@
         }
 
         .navbar {
-            transition: 600ms;
+            transition: 100ms;
         }
     </style>
 </head>
@@ -47,7 +47,7 @@
         </nav>
     </header>
     <main>
-        <nav class="navbar sticky top-0 z-40">
+        <nav class="navbar fixed top-5 left-0 right-0 z-40 py-5">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="{{ route('home') }}" class="flex items-center">
                     <img src="{{ asset('logos/2.png') }}" class="logo-1 h-16 mr-3" alt="Logo">

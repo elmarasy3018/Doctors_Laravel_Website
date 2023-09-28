@@ -1,5 +1,5 @@
 @include('header')
-<div class="grid grid-cols-2 gap-10 m-10">
+<div class="grid grid-cols-2 gap-10 m-10 mt-28 mb-12">
     <div>
         <img src="{{ asset($doctor->image) }}" alt="doctor" class="rounded-lg">
     </div>
