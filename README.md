@@ -9,35 +9,47 @@ A simple laravel website for doctors
 Clone the project
 
 ```bash
-  git clone https://github.com/elmarasy3018/Doctors_Laravel_Website.git
+git clone https://github.com/elmarasy3018/Doctors_Laravel_Website.git
 ```
 
 Install composer
 
 ```bash
-  composer install
+composer install
 ```
 
 Create the .env file
 
 ```bash
-  cp .env.example .env
+cp .env.example .env
 ```
 
 Generate a key
 
 ```bash
-  php artisan key:generate
+php artisan key:generate
 ```
 
 Migrate and Seed the data
 
 ```bash
-  php artisan migrate --seed
+php artisan migrate --seed
 ```
 
 Start the server
 
 ```bash
-  php artisan serve
+php artisan serve
+```
+
+In a new terminal
+
+```bash
+npm install
+```
+
+Run the front-end
+
+```bash
+npm run dev
 ```
